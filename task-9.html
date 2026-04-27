@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate awesome web pages</title>
+    <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+    }
+    body {
+    background-color: #2f1893;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    }
+    .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 80px;
+    }
+    .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    }
+    .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    }
+    .nav-links a {
+    text-decoration: none;
+    color: white;
+    opacity: 0.7;
+    transition: 0.3s;
+    }
+    .nav-links a.active-link {
+    opacity: 0.4;
+    }
+    .btn-purchase {
+    background-color: #e93a7d;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 20px;
+    text-decoration: none;
+    }
+    .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 80px;
+    flex-grow: 1;
+    }
+
+    .hero-text {
+        max-width: 450px;
+    }
+
+    .hero-text h1 {
+        font-size: 52px;
+        line-height: 1.1;
+        margin-bottom: 30px;
+    }
+
+    .hero-text p {
+        font-size: 18px;
+        opacity: 0.8;
+        margin-bottom: 40px;
+        line-height: 1.6;
+    }
+
+    .learn-more {
+        background-color: #e93a7d;
+        color: white;
+        border: none;
+        padding: 15px 35px;
+        border-radius: 30px;
+        cursor: pointer;
+    }
+    .auth-card {
+        background-color: white;
+        color: #1e0e62;
+        padding: 50px;
+        border-radius: 10px;
+        width: 100%;
+        max-width: 450px;
+        text-align: center;
+    }
+    .auth-card h2 {
+        margin-bottom: 30px;
+        font-size: 28px;
+    }
+    input[type="email"], input[type="password"] {
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 15px;
+        border: 1px solid #ebeaed;
+        border-radius: 25px;
+        outline: none;
+    }
+    input[type="checkbox"] {
+        accent-color: #25dac5; /* Buraya istədiyin rəngi yaza bilərsən */
+        width: 20px;  /* Ölçüsünü də belə böyüdə bilərsən */
+        height: 20px;
+    }
+    .checkbox-container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 25px;
+        font-size: 14px;
+        color: #15143966;
+        text-align: left;
+    }
+    .btn-signin {
+        width: 100%;
+        padding: 15px;
+        background-color: #482be7;
+        color: white;
+        border: none;
+        border-radius: 25px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+    .divider {
+        margin-bottom: 20px;
+        color: #ebeaed;
+        position: relative;
+    }
+    .btn-twitter {
+        width: 100%;
+        padding: 15px;
+        background-color: #1da1f2;
+        color: white;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+    }
+    .footer-text {
+        margin-top: 25px;
+        font-size: 14px;
+        color: rgba(21, 20, 57, 0.4);
+    }
+    .footer-text a {
+        color: #25dac5;
+        text-decoration: none;
+    }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Startup 3</div>
+        <nav class="nav-right">
+            <ul class="nav-links">
+                <li><a href="#" class="active-link">Overview</a></li>
+                <li><a href="#">Prices</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Feedback</a></li>
+            </ul>
+            <a href="#" class="btn-purchase">Purchase</a>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="hero-text">
+            <h1>Generate Awesome Web Pages</h1>
+            <p>The most important part of the Startup is the samples. The samples form a set of 25 usable pages you can use as is or you can add new blocks.</p>
+            <button class="learn-more">Learn More</button>
+        </div>
+
+        <div class="auth-card">
+            <h2>Sign Up Now</h2>
+            <form class="sign-up-form">
+                <input type="email" placeholder="Your email" required>
+                <input type="password" placeholder="Your password" required>
+                
+                <div class="checkbox-container">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">I agree to the Terms of Service.</label>
+                </div>
+
+                <button type="submit" class="btn-signin">Sign In</button>
+
+                <div class="divider">or</div>
+
+                <button type="button" class="btn-twitter">Login via Twitter</button>
+            </form>
+            <p class="footer-text">Do you have an Account? <a href="#">Sign In</a></p>
+        </div>
+    </main>
+    
+</body>
+</html>
