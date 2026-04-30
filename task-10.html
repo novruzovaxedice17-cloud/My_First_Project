@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        padding: 80px 20px;
+    }
+
+    .main-container {
+        max-width: 1100px;
+        width: 100%;
+    }
+
+    /* Hero Section */
+    .hero-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 50px;
+        margin-bottom: 100px;
+    }
+
+    .hero-content {
+        flex: 1;
+    }
+
+    .hero-content h1 {
+        font-size: 48px;
+        color: #1e0e62;
+        margin-bottom: 25px;
+        line-height: 1.2;
+    }
+
+    .hero-content p {
+        color: rgba(21, 20, 57, 0.4);
+        font-size: 16px;
+        margin-bottom: 35px;
+        line-height: 1.6;
+    }
+
+    .btn-discount {
+        background-color: #25dac5;
+        color: white;
+        border: none;
+        padding: 15px 35px;
+        border-radius: 30px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    .hero-image img {
+        width: 100%;
+        max-width: 450px;
+        border-radius: 10px;
+    }
+    .products-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 30px;
+    }
+
+    .product-card {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+        border-radius: 10px;
+    }
+
+    .card-img {
+        width: 130px;
+        height: 160px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .card-info h3 {
+        font-size: 14px;
+        color: #1e0e62;
+        letter-spacing: 1.5px;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+    }
+
+    .card-info p {
+        font-size: 14px;
+        color: rgba(21, 20, 57, 0.4);
+        line-height: 1.5;
+        margin-bottom: 15px;
+    }
+
+    .price {
+        display: inline-block;
+        padding: 8px 20px;
+        border: 1px solid #ebeaed;
+        border-radius: 20px;
+        color: #1e0e62;
+        font-weight: bold;
+        font-size: 14px;
+    }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Online Market With The Biggest Product Choise</h1>
+                <p>In our online store the biggest choise of products on the planet. Free delivery and a lot of benefit for you yet.</p>
+                <button class="btn-discount">Get Discount for $99</button>
+            </div>
+            <div class="hero-image">
+                <img src="heading_image.jpg" alt="Headphones">
+            </div>
+        </section>
+        <section class="products-grid">
+            <!-- Kart 1 -->
+            <div class="product-card">
+                <img src="image_iphone.jpg" class="card-img" alt="iPhone">
+                <div class="card-info">
+                    <h3>IPHONE XR</h3>
+                    <p>Super Retina in two sizes — including the largest display ever on the iPhone</p>
+                    <span class="price">$729</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="image_watch.jpg" class="card-img" alt="Apple Watch">
+                <div class="card-info">
+                    <h3>APPLE WATCH</h3>
+                    <p>Get the motivation you need to achieve your fitness goals.</p>
+                    <span class="price">$399</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="image_vr.jpg" class="card-img" alt="VR Headsets">
+                <div class="card-info">
+                    <h3>VR HEADSETS</h3>
+                    <p>A realistic three-dimensional image or artificial environment</p>
+                    <span class="price">$499</span>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
